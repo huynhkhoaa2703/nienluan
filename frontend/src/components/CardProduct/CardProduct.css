@@ -1,0 +1,22 @@
+.card-item {
+  padding: 10px;
+}
+
+.card-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: black;
+  text-align: center;
+}
+
+.card-price {
+  color: red;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ant-card-body {
+  padding: 10px 24px !important;
+}

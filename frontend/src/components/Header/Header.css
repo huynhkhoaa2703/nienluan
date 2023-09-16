@@ -1,0 +1,40 @@
+.header-wrapper {
+  background-color: #1d2023;
+  padding: 10px 120px;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: nowrap;
+}
+
+.header-text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header-text__right {
+  display: flex;
+}
+
+.header-account {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 15px;
+}
+
+.header-account__sub {
+  font-size: 16px;
+}
+
+.icon-user {
+  font-size: 25px;
+}
+
+.header-cart {
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+  white-space: nowrap;
+  font-size: 16px;
+}

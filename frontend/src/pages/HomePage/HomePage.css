@@ -1,0 +1,31 @@
+.type-product {
+  padding: 0 120px;
+}
+
+.type-product_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: flex-start;
+  height: 44px;
+}
+
+#container {
+  background-color: black;
+}
+/* 
+.slick-next {
+  display: none !important;
+} */
+
+#container {
+  background-color: #e7e7e7;
+  padding: 0 120px;
+}
+
+.card-wrapper {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
