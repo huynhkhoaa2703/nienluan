@@ -12,6 +12,7 @@ const ButtonSearch = (props) => {
         className="btn-search__input"
         size={size}
         placeholder={placeholder}
+        {...props}
       />
       <ButtonComponent
         className="btn-search__button"

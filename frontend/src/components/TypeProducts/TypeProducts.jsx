@@ -1,7 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./TypeProducts.css";
 
 const TypeProducts = ({ name }) => {
-  return <div>{name}</div>;
+  const navigate = useNavigate();
+  const handleType = (type) => {
+    navigate(`/product/${type}`, { state: type });
+  };
+
+  return (
+    <div className="type-product__hover" onClick={() => handleType(name)}>
+      {name}
+    </div>
+  );
 };
 
 export default TypeProducts;

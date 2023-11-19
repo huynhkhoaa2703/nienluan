@@ -24,11 +24,13 @@
 }
 
 .header-account__sub {
-  font-size: 16px;
+  cursor: pointer;
+  font-size: 13px;
 }
 
 .icon-user {
   font-size: 25px;
+  color: white;
 }
 
 .header-cart {
@@ -37,4 +39,74 @@
   margin-left: 20px;
   white-space: nowrap;
   font-size: 16px;
+  gap: 24px;
+}
+
+.header-top {
+  background-color: gray;
+  padding: 2px 0;
+  font-size: 15px;
+}
+
+.wrapper {
+  padding: 0 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.grid {
+  display: flex;
+  gap: 40px;
+}
+
+.text-network {
+  padding-left: 50px;
+  display: flex;
+  flex: 3;
+}
+
+.social-network {
+  display: flex;
+  flex: 1;
+}
+
+.contact {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.phone-number > a,
+.mail-contact > a {
+  color: rgb(212, 207, 207);
+  text-decoration: none;
+}
+
+.header-text__right {
+  cursor: pointer;
+}
+
+.content-p {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content-p:hover {
+  width: 100%;
+  color: rgb(231, 39, 39) !important;
+}
+
+.header-wishlist {
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+}
+
+.header-account__sub span:hover {
+  color: rgb(231, 39, 39);
+}
+
+.icon-user:hover {
+  color: rgb(231, 39, 39);
 }

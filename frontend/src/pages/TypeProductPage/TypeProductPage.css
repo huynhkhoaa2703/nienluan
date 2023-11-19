@@ -1,0 +1,23 @@
+.wrapper-products {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.title-type__product {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.row-none-flex {
+  display: block !important;
+}
+
+.type__product {
+  font-size: 22px;
+  font-weight: 700;
+  color: #7d7c7c;
+}

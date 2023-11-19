@@ -6,7 +6,7 @@
   background-color: #fff;
   border-radius: 0;
   outline: none;
-  border: none;
+  /* border: none; */
 }
 
 .btn-search__button {

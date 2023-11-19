@@ -1,0 +1,30 @@
+.wrapper-admin {
+  display: flex;
+}
+
+.wrapper-admin__left {
+  height: 100vh;
+}
+
+.wrapper-admin__right {
+  flex: 1;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-sidebar {
+  height: 100vh;
+  border-right: 1px solid #dbd4d4 !important;
+}
+
+.ant-table-wrapper table {
+  background-color: gainsboro !important;
+  font-size: 16px;
+}
+
+.ant-table-wrapper table:hover {
+  cursor: pointer;
+}

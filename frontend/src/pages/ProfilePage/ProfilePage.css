@@ -1,0 +1,35 @@
+.wrapper-profile {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.wrapper-header {
+  text-align: center;
+  color: #000;
+  margin: 4px 0;
+}
+
+.wrapper-content__profile {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 20px;
+}
+
+.warpper-label {
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  width: 70px;
+}
+
+.wrapper-input {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

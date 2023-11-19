@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ccc;
+}
+
+.container-wrapper {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  padding: 40px 50px;
+}
+
+.container-left {
+  align-self: center;
+}
+
+.container-right {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-form {
+  background-color: rgb(231, 39, 39);
+  color: white;
+  height: 48px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.text {
+  cursor: pointer;
+  font-size: 15px;
+  color: rgb(206, 36, 36);
+}
+
+.input-component {
+  margin-bottom: 10px;
+}

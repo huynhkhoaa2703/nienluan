@@ -8,6 +8,9 @@
   line-height: 16px;
   color: black;
   text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .card-price {
@@ -19,4 +22,24 @@
 
 .ant-card-body {
   padding: 10px 24px !important;
+}
+
+.card-selled {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.card-selled span {
+  /* display: flex; */
+  gap: 20px;
+}
+
+.ant-card-cover {
+  height: 350px;
+}
+
+.ant-card-cover img {
+  object-fit: cover;
 }
