@@ -9,7 +9,8 @@ import { isJsonString } from "./utils";
 import { jwtDecode } from "jwt-decode";
 import { useDispatch, useSelector } from "react-redux";
 import * as UserService from "./services/UserService";
-import { updateUser } from "./redux/slices/userSlice";
+import { resetUser, updateUser } from "./redux/slices/userSlice";
+import { storage } from "redux-persist/lib/storage";
 
 function App() {
   const dispatch = useDispatch();
@@ -35,9 +36,16 @@ function App() {
     async (config) => {
       const currentTime = new Date();
       const { decoded } = handleDecoded();
+      let storageRefreshToken = localStorage.getItem("refresh_token");
+      const refreshToken = JSON.parse(storageRefreshToken);
+      const decodedRefreshToken = jwtDecode(refreshToken);
       if (decoded?.exp < currentTime.getTime() / 1000) {
-        const data = await UserService.refreshToken();
-        config.headers["token"] = `Bearer ${data?.access_token}`;
+        if (decodedRefreshToken?.exp > currentTime.getTime() / 1000) {
+          const data = await UserService.refreshToken();
+          config.headers["token"] = `Bearer ${data?.access_token}`;
+        } else {
+          dispatch(resetUser());
+        }
       }
       return config;
     },
@@ -47,8 +55,16 @@ function App() {
   );
 
   const handleGetDetailsUser = async (id, token) => {
+    let storageRefreshToken = localStorage.getItem("refresh_token");
+    const refreshToken = JSON.parse(storageRefreshToken);
     const res = await UserService.getDetailsUser(id, token);
-    dispatch(updateUser({ ...res?.data, access_token: token }));
+    dispatch(
+      updateUser({
+        ...res?.data,
+        access_token: token,
+        refreshToken: refreshToken,
+      })
+    );
     console.log("res", res);
   };
 

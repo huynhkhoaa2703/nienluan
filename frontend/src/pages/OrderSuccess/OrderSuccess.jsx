@@ -14,7 +14,10 @@ const OrderSuccess = () => {
     <div style={{ background: "#f5f5fa", with: "100%", height: "100vh" }}>
       <div style={{ height: "100%", width: "1270px", margin: "0 auto" }}>
         <h3 style={{ fontWeight: "bold" }}>Đơn đặt hàng thành công</h3>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className="success-responsive"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <div className="wrapper-left">
             <div className="wrapper-info">
               <div>
@@ -39,7 +42,7 @@ const OrderSuccess = () => {
               <div className="wrapper-info">
                 {state.orders?.map((order) => {
                   return (
-                    <div className="wrapper-item__order">
+                    <div className="wrapper-item__order order-success">
                       <div
                         style={{
                           width: "390px",

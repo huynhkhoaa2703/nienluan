@@ -81,3 +81,20 @@
   width: 300px;
   font-weight: 700;
 }
+
+@media only screen and (max-width: 768px) {
+  .responsive-order {
+    display: block !important;
+  }
+  .wrapper-responsive {
+    width: auto !important;
+    display: block !important;
+  }
+  .name-responsive {
+    width: auto !important;
+  }
+  .price-responsive {
+    flex: 0 !important;
+    display: block !important;
+  }
+}

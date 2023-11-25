@@ -79,7 +79,7 @@ const ProductDetailsComponent = ({ idProduct }) => {
   };
   return (
     <>
-      <Row>
+      <Row className="row-res-product">
         <Col className="col-flex" span={10}>
           <Image src={productDetails?.image} alt="img" preview={false} />
           <div className="img-sub">

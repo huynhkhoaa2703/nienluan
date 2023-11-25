@@ -62,3 +62,29 @@
 .btn-margin {
   margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  #root {
+    overflow-x: hidden;
+  }
+  .type-product {
+    padding: 0;
+  }
+
+  #container {
+    padding: 0;
+  }
+
+  .h1-tittle {
+    font-size: 21px;
+  }
+
+  .card-item {
+    width: 177px !important;
+    height: 350px;
+  }
+
+  .ant-card-cover {
+    height: auto !important;
+  }
+}

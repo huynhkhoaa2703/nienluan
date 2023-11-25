@@ -16,3 +16,16 @@
   font-weight: 600;
   color: #c70039;
 }
+
+@media only screen and (max-width: 768px) {
+  .wrapper-info {
+    display: flex !important;
+  }
+
+  .order-success {
+    flex-flow: column !important;
+  }
+  .success-responsive {
+    display: block !important;
+  }
+}

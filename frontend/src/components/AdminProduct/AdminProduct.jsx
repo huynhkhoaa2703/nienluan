@@ -360,7 +360,7 @@ const AdminProduct = () => {
       </div>
       <ModalComponent
         forceRender
-        title="Tao san pham"
+        title="Thêm sản phẩm"
         open={isModalOpen}
         onCancel={handleCancel}
         footer={null}

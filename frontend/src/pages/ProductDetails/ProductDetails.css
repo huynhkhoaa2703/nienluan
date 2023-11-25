@@ -14,3 +14,12 @@
   padding: 10px 0;
   font-size: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+  .product-detail__header {
+    padding: 0;
+  }
+  .img-sub {
+    display: none;
+  }
+}

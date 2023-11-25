@@ -146,7 +146,10 @@ const OrderPage = () => {
     <div style={{ background: "#f5f5fa", with: "100%", height: "100vh" }}>
       <div style={{ height: "100%", width: "1270px", margin: "0 auto" }}>
         <h3 style={{ fontWeight: "bold" }}>Giỏ hàng</h3>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className="responsive-order"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <div className="wrapper-left">
             <h4>Phí giao hàng</h4>
             <div className="wrapper-style__header__delivery">
@@ -190,6 +193,7 @@ const OrderPage = () => {
                 return (
                   <div className="wrapper-item__order" key={order?.product}>
                     <div
+                      className="wrapper-responsive"
                       style={{
                         width: "390px",
                         display: "flex",
@@ -211,6 +215,7 @@ const OrderPage = () => {
                         }}
                       />
                       <div
+                        className="name-responsive"
                         style={{
                           width: 260,
                           overflow: "hidden",
@@ -222,6 +227,7 @@ const OrderPage = () => {
                       </div>
                     </div>
                     <div
+                      className="price-responsive"
                       style={{
                         flex: 1,
                         display: "flex",

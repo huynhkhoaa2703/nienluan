@@ -110,3 +110,32 @@
 .icon-user:hover {
   color: rgb(231, 39, 39);
 }
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+  .header-wrapper {
+    gap: 0;
+    padding: 0 15px;
+    justify-content: start;
+  }
+  .btn-search__button {
+    display: none;
+  }
+  .btn-search {
+    justify-content: center;
+  }
+  .btn-search__input {
+    font-size: 12px;
+  }
+  .header-account .icon-user {
+    display: none;
+  }
+  .ant-col-12 {
+    max-width: 40% !important;
+  }
+  .ant-col-6 {
+    max-width: 15% !important;
+  }
+}

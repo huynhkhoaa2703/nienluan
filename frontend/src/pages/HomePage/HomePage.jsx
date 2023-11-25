@@ -5,6 +5,7 @@ import SliderComponent from "../../components/SliderComponent/SliderComponent";
 import slider1 from "../../assets/img/banner1.jpg";
 import slider2 from "../../assets/img/banner2.jpg";
 import slider3 from "../../assets/img/banner3.jpg";
+import slider4 from "../../assets/img/banner4.jpg";
 import CardProduct from "../../components/CardProduct/CardProduct";
 import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
 import { useQuery } from "@tanstack/react-query";
@@ -17,7 +18,6 @@ const HomePage = () => {
   const searchDebounce = useDebounce(searchProduct, 1000);
   const [limit, setLimit] = useState(7);
   const [typeProduct, setTypeProduct] = useState([]);
-  // const arr = ["Manga", "Manhua", "Manhwa"];
 
   const fetchProductAll = async (context) => {
     const limit = context?.queryKey && context?.queryKey[1];
@@ -60,7 +60,7 @@ const HomePage = () => {
       <div id="container">
         <SliderComponent
           className="img-wrapper"
-          arrImg={[slider1, slider2, slider3]}
+          arrImg={[slider1, slider2, slider3, slider4]}
         />
         <h1 className="h1-tittle">Truyện mới phát hành</h1>
         <div className="card-wrapper">

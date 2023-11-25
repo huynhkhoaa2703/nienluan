@@ -10,7 +10,7 @@ const ProductDetails = ({ idProduct }) => {
     <div className="product-detail__header">
       <div className="product-detail__title">Chi tiết sản phẩm</div>
       <div className="product-detail">
-        <ProductDetailsComponent idProduct={id} />
+        <ProductDetailsComponent className="product-res" idProduct={id} />
       </div>
     </div>
   );

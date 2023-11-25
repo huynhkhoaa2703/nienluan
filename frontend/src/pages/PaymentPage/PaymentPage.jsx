@@ -193,7 +193,10 @@ const PaymentPage = () => {
     <div style={{ background: "#f5f5fa", with: "100%", height: "100vh" }}>
       <div style={{ height: "100%", width: "1270px", margin: "0 auto" }}>
         <h3 style={{ fontWeight: "bold" }}>Phương thức thanh toán</h3>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className="payment-responsive"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <div className="wrapper-left">
             <div className="wrapper-info">
               <div>
